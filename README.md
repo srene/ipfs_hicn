@@ -22,14 +22,14 @@
 ## Solution 
 
 <ol>  
-    <li>IPFS name resolution to map names to hICN routable names, mapping IPFS Content Identifiers (CIDs) to hICN routable names (IPv6 addresses) so that we can take advantage of in-network caching.
+    <li>IPFS name resolution  mapping IPFS Content Identifiers (CIDs) to hICN routable names (IPv6 addresses) so that it can take advantage of in-network caching.
           <ol>
-              <li>IPFS content providers publishes PeerIds Linked to hICN addresses for each CID in the IPFS (Kad) DHT.</li>
+              <li>IPFS content providers publishes PeerIds Linked to hICN addresses for each CID in the IPFS (Kademlia) DHT.</li>
+              <li>IPFS can resolve to hICN addresses using the DHT.</li>
           </ol>
     </li>
-    <li>IPFS can resolve to hICN addresses using the DHT.
-      <ol>
-          <li>hICN as a new libp2p protocol, integrable into IPFS.</li>
+    <li>hICN as a new libp2p protocol, integrable into IPFS.
+       <ol>
           <li>Integration of hICN library into IPFS to request and receive content using hICN interests/content.</li>
       </ol>
     </li>
@@ -58,7 +58,10 @@
   We have modified bitswap to not only request from other peers connected but to request blocks directly from an hCIN network when a matching hICN is found after querying the DHT.
 
   [go-bitswap](https://github.com/srene/go-bitswap)
+  
+* Libp2p hICN Protocol
 
+  TBC
 
 * Testing and evaluation.
   
