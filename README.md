@@ -53,9 +53,9 @@
   
 * Bitswap
 
-Bitswap is the data trading module for ipfs. It manages requesting and sending blocks to and from other peers in the network. 
-Bitswap has two main jobs: to acquire blocks requested by the client from the network and to judiciously send blocks in its possession to other peers who want them
-We have modified bitswap to not only request from other peers connected but to request blocks directly from an hCIN network when a matching hICN is found after querying the DHT.
+  Bitswap is the data trading module for ipfs. It manages requesting and sending blocks to and from other peers in the network. 
+  Bitswap has two main jobs: to acquire blocks requested by the client from the network and to judiciously send blocks in its possession to other peers who want them
+  We have modified bitswap to not only request from other peers connected but to request blocks directly from an hCIN network when a matching hICN is found after querying the DHT.
 
   [go-bitswap](https://github.com/srene/go-bitswap)
 
