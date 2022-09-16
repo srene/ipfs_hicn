@@ -47,7 +47,7 @@
 
 * IPFS client
 
-  We have modified IPFS client to include IPFS content publication in the DHT using hICN addresses and content request using hICN. 
+  We have modified IPFS client to include IPFS content publication in the DHT using hICN addresses and being able to request content using hICN protocol. 
 
   [go-ipfs](https://github.com/srene/go-ipfs)
   
@@ -55,7 +55,7 @@
 
   Bitswap is the data trading module for ipfs. It manages requesting and sending blocks to and from other peers in the network. 
   Bitswap has two main jobs: to acquire blocks requested by the client from the network and to judiciously send blocks in its possession to other peers who want them
-  We have modified bitswap to not only request from other peers connected but to request blocks directly from an hCIN network when a matching hICN is found after querying the DHT.
+  We have modified bitswap to not only requesting content by connecting directly to other peers but also being able to request it from the network using protocol when a matching hICN address is found after querying the DHT.
 
   [go-bitswap](https://github.com/srene/go-bitswap)
   
